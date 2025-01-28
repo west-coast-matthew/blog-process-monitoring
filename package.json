@@ -1,0 +1,27 @@
+{
+  "name": "process-monitoring",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "clear && npx tsx src/loan-app-processor.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "lodash": "^4.17.21",
+    "saxon-js": "^2.7.0",
+    "typescript": "^5.7.3",
+    "uuid": "^11.0.5",
+    "xmldom": "^0.6.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/lodash": "^4.17.14",
+    "@types/node": "^22.10.10",
+    "ts-node": "^10.9.2"
+  }
+}

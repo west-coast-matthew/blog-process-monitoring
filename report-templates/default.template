@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsl:transform xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
+    <xsl:output method="html" doctype-public="XSLT-compat" omit-xml-declaration="yes" encoding="UTF-8" indent="yes" />
+
+    <xsl:template match="/">
+      <html>
+        <head>
+          <title>Loan Application Report</title>
+          <style>
+            
+            body{
+              font-family: 'Roboto';font-size: 22px;
+              background-color: #f0f0f5;
+            }
+
+            .main-container{
+              //border: thin solid grey;
+              margin: auto;
+              width: 80%;
+            }
+
+            .sub-container{
+              margin: auto;
+              width: 75%;
+              margin: auto;
+              //border: thin solid grey;
+            }
+
+            .sub-container-messages{
+              width: 80%;
+              margin: auto;
+              //border: thin solid grey;
+            }
+
+          </style>
+        </head>
+        <body>
+
+            <div class="main-container">
+              <h1>Loan Application</h1>
+              <h2>Transaction id ({{ transactionId }})</h2>
+                <div>
+                  {{#each messages.events}}
+                          <h3> {{ this.name }} </h3>
+                          <ul>
+                          {{#each events}}
+                              <li>{{ this.name }}</li>
+                          {{/each }}
+                          </ul>
+                  {{/each}}
+                </div>
+              </xsl:for-each>
+            </div>
+
+
+        </body>
+      </html>
+    </xsl:template>
+
+</xsl:transform>
