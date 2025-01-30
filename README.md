@@ -1,5 +1,7 @@
 # Business Process Monitoring Demo
 
+![Alt text](images/readme-md-headers.png)
+
 ## Introduction
 The project provides an working example in a node project of a 'complex' business process, and an approach to instrument monitoring into the process. The example use case attempts to replicate the process of validating and calculating an approval status and terms for a loan. It consists of a main method, which in turns performs a series of calls used to arrive at a final result. The idea is that we provide an illustration of an complex process, as an working example. All API calls are therefore emulated. 
 
