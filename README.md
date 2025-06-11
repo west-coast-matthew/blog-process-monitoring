@@ -16,7 +16,7 @@ Each time the process is executed, related information about the approval and te
 
 ## Running the application
 Check out the project
-Install the application via `npm run install`
+Install the application via `npm install`
 Run the application via `npm run start`
 
 This will mock an loan application, and then send it to the main routine. Logging information will be reported, in addition to business logic aggregated into an HTML report, which in turn will be generated under the /reports directory.
